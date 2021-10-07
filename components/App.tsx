@@ -4,15 +4,15 @@ import SignatureHeader from './molecules/SignatureHeader';
 
 const App: NextComponentType = () => {
     const elemArr = [
-        {title: "SupBitch", subtitle: "Lol"},
-        {title: "Hari", subtitle: "Lol"},
-        {title: "SupBitch", subtitle: "FUCKOOFFFFF"},
-        {title: "FUCKOOFFFFF", subtitle: "Lol"},
-        {title: "ANUSHSSAAAA", subtitle: "Lol"},
+        {title: "Heya", subtitle: ""},
+        {title: "Hello World", subtitle: ""},
+        {title: "Lorem Ipsum", subtitle: ""},
+        {title: "Linen", subtitle: ""},
+        {title: "Smoothness", subtitle: ""},
     ]
 
-    const allElements = elemArr.map(item => {
-        return <SignatureHeader title={item.title} subtitle={item.subtitle} center="" rtl={true}/>
+    const allElements = elemArr.map((item, key) => {
+        return <SignatureHeader title={item.title} subtitle={item.subtitle} key={key} center="" rtl={true}/>
     })
 
     return (

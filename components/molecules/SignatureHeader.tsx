@@ -1,18 +1,15 @@
 import styled from 'styled-components'
 import SignatureLottieAnim from './SignatureLottieAnim';
 
-const SignatureHeader = (props) => {
+const SignatureHeader = (props: any) => {
     return (
         <SignatureHeaderWrap>
             <h1>{props.title}</h1>
-            <SignatureLottieAnim AnimWrap={AnimWrap} />
+            <SignatureLottieAnim />
         </SignatureHeaderWrap>
     )
 }
 
-const AnimWrap = styled.div`
-    width: 60%;
-`
 
 const SignatureHeaderWrap = styled.div`
     display: grid;
@@ -24,9 +21,6 @@ const SignatureHeaderWrap = styled.div`
         font-weight: 500;
     }
 
-    ${AnimWrap}{
-        margin-top: -8%;
-    }
 `
 
 export default SignatureHeader
